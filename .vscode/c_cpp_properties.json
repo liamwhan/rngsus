@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}/code",
+                "${workspaceFolder}/code/imgui",
+                "${workspaceFolder}/code/imgui/backends"
+            ],
+            "compilerPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30037\\bin\\Hostx64\\x64\\cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "windows-msvc-x64",
+            "defines": [
+                "RNG_INTERNAL",
+                "RNG_SLOW",
+                "RNG_WIN32",
+                "_WIN32"
+            ]
+        }
+    ],
+    "version": 4
+}

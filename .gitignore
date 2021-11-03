@@ -1,0 +1,14 @@
+build/
+publish/
+data/
+.vs/
+**/*.exe
+**/*.ilk
+**/*.pdb
+**/*.msi
+**/*.o
+**/.DS_Store
+
+**/ffmpeg/
+glfw/
+**/Pods/**/*
