@@ -27,10 +27,10 @@ void InitUI(ui_state *State)
     colors[ImGuiCol_Text] = ImVec4(0.00f, 0.00f, 0.00f, 1.00f);
     colors[ImGuiCol_WindowBg] = ImVec4(1.00f, 1.00f, 1.00f, 0.95f);
     colors[ImGuiCol_PopupBg] = ImVec4(1.00f, 1.00f, 1.00f, 1.00f);
-    colors[ImGuiCol_Button] = (ImVec4)ImColor(0.47058823529f, 0.12549019608f, 0.62745098039f, 1.0f);
-    colors[ImGuiCol_ButtonHovered] = (ImVec4)ImColor(0.37254901961f, 0.10196078431f, 0.50196078431f, 1.0f);
-    colors[ImGuiCol_ButtonActive] = (ImVec4)ImColor(0.37254901961f, 0.10196078431f, 0.50196078431f, 1.0f);
-    colors[ImGuiCol_TitleBgActive] = (ImVec4)ImColor(0.47058823529f, 0.12549019608f, 0.62745098039f, 1.0f);
+    colors[ImGuiCol_Button] = (ImVec4)ImColor(242, 95, 92, 255);
+    colors[ImGuiCol_ButtonHovered] = (ImVec4)ImColor(233, 126, 124, 255);
+    colors[ImGuiCol_ButtonActive] = (ImVec4)ImColor(199, 60, 58, 255);
+    colors[ImGuiCol_TitleBgActive] = (ImVec4)ImColor(242, 95, 92, 255);
     ImGui::GetStyle().ScaleAllSizes(State->DpiScale);
 }
 

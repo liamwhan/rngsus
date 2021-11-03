@@ -1,7 +1,7 @@
 //
 //  rng_gui.h
 //
-//  Created by Liam Whan on 12/4/21.
+//  Created by Liam Whan on 4/11/2021.
 //
 
 #if !defined(RNG_GUI_H)

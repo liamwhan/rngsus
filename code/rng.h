@@ -19,7 +19,7 @@
 
 #if RNG_SLOW
 #if defined(_WIN32)
-#define Assert(Expression) if(!(Expression)) {*(int *)0 = 0;} // Trying to write to 0 will cause the program to crash
+#define Assert(Expression) if(!(Expression)) {*(int *)0 = 0;} // Trying to write to 0 will cause the program to crash at the line the assert is on
 #elif defined(__APPLE__)
 #include <Foundation/Foundation.h>
 #define Assert(Expression) NSCAssert(Expression)
@@ -105,7 +105,6 @@ typedef PLATFORM_FREE(platform_free);
 
 #define PLATFORM_ALLOC(name) void* name(uint32 Bytes)
 typedef PLATFORM_ALLOC(platform_alloc);
-
 
 #define PLATFORM_CREATE_WINDOW(name) void* name()
 typedef PLATFORM_CREATE_WINDOW(platform_create_window);

@@ -337,12 +337,12 @@ WindowProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
     {
     case WM_CREATE:
     {
-        HANDLE hIcon = LoadImage(0, _T("favicon.ico"), IMAGE_ICON, 0, 0, LR_DEFAULTSIZE | LR_LOADFROMFILE);
-        Assert(hIcon != 0);
-        SendMessage(hWnd, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
-        SendMessage(hWnd, WM_SETICON, ICON_BIG, (LPARAM)hIcon);
-        SendMessage(GetWindow(hWnd, GW_OWNER), WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
-        SendMessage(GetWindow(hWnd, GW_OWNER), WM_SETICON, ICON_BIG, (LPARAM)hIcon);
+        // HANDLE hIcon = LoadImage(0, _T("favicon.ico"), IMAGE_ICON, 0, 0, LR_DEFAULTSIZE | LR_LOADFROMFILE);
+        // Assert(hIcon != 0);
+        // SendMessage(hWnd, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
+        // SendMessage(hWnd, WM_SETICON, ICON_BIG, (LPARAM)hIcon);
+        // SendMessage(GetWindow(hWnd, GW_OWNER), WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
+        // SendMessage(GetWindow(hWnd, GW_OWNER), WM_SETICON, ICON_BIG, (LPARAM)hIcon);
         return 0;
     }
     case WM_SIZE:
